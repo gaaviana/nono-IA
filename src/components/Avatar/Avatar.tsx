@@ -1,7 +1,7 @@
 import { View } from "react-native";
-import { Eyes } from "./Eyes";
-import { Mouth } from "./Mouth";
-import type { Emotion } from "../../types/avatar";
+import { Eyes } from "./Eyes/Eyes";
+import { Mouth } from "./Mouth/Mouth";
+import { Emotion } from "../../types/avatar";
 
 interface AvatarProps {
   emotion: Emotion;
@@ -10,7 +10,7 @@ interface AvatarProps {
 export function Avatar({ emotion }: AvatarProps) {
   return (
     <View>
-      <Eyes />
+      <Eyes emotion={emotion} />
       <Mouth emotion={emotion}  />
     </View>
   );
