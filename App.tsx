@@ -5,7 +5,7 @@ import { Avatar } from './src/components/Avatar/Avatar';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Avatar/>
+      <Avatar emotion='happy'/>
     </View>
   );
 }
